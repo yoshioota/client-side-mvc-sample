@@ -1,0 +1,27 @@
+h1 タスク
+
+.task_form
+  = render 'form'
+
+hr
+
+table.table
+  thead
+    tr
+      th
+      th すること
+      th
+      th
+
+  tbody#tasks
+
+/= javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js'
+/= javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js'
+/= javascript_include_tag 'backbonejs/backbone_sample'
+/= javascript_include_tag 'backbonejs/templates/tasks/item'
+/= javascript_include_tag 'backbonejs/models/task'
+/= javascript_include_tag 'backbonejs/collections/tasks'
+/= javascript_include_tag 'backbonejs/views/tasks/task_item'
+/= javascript_include_tag 'backbonejs/views/tasks/task_form'
+/= javascript_include_tag 'backbonejs/views/tasks/tasks_index'
+/= javascript_include_tag 'backbonejs/routers/tasks_router'

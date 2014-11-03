@@ -1,0 +1,6 @@
+= bootstrap_form_for @task, url: 'javascript:void(0)' do |f|
+
+  = f.text_field :title, label: 'すること(⌘+I)', class: 'input-lg'
+
+  .actions.text-center
+    = f.submit '追加', class: 'btn btn-primary btn-lg'
